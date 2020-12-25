@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Combination of Core Effects</title>
+<style type="text/css">
+#mydiv {
+  border: 1px #green solid;
+
+}
+#mydiv1 {
+  border: 1px #green solid;
+    background:#DFEDFD;
+}
+.toolbar {
+background:#FFFFCC;
+}
+</style>
+<script src="includes/scriptaculous/lib/prototype.js" type="text/javascript"></script>
+<script src="includes/scriptaculous/src/scriptaculous.js" type="text/javascript"></script>
+<script src="includes/scriptaculous/src/effects.js" type="text/javascript"></script>
+<script src="includes/scriptaculous/src/unittest.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="toolbar">
+<a href="#" onClick="new Effect.multiple(['mydiv','mydiv1'],Effect.Appear); return false; ">RESET</a>&nbsp;&nbsp;
+
+<a href="#" onClick="new Effect.multiple(['mydiv','mydiv1'],Effect.Fade); return false;">Multiple</a>&nbsp;&nbsp;
+
+<a href="#" onClick="new Effect.Opacity('mydiv',{from:1.0,to:0.10}); return false;">Opacity</a>&nbsp;&nbsp;
+
+<a href="#" onclick="$('mydiv1').morph('background:#CDEDCD; width:450px;'); return false;">Morph</a>&nbsp;&nbsp;
+
+<a href="#" onClick="new Effect.Highlight('mydiv1', { startcolor: '#ffff99',
+endcolor: '#fffffff' }); return false;"">Highlight</a>&nbsp;&nbsp;
+
+<a href="#" onClick="new Effect.Scale('mydiv1', 200); return false;">Scale</a>&nbsp;&nbsp;
+</div>
+<p>
+<div class="mydiv" id="mydiv" >
+<img src="wallpaper2.bmp" width="450">
+</div>
+
+<div class="mydiv1" id="mydiv1" style="background:#DFEDFD;">
+This is some random Text to make u smile. Please say Cheese :)
+</div>
+</body>
+</html>

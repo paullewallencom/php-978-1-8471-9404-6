@@ -1,0 +1,16 @@
+.yes {
+color:green;
+font-family:Verdana;
+font-size:12px;
+}
+
+.no {
+color:red;
+font-family:verdana;
+font-size:12px;
+}
+
+.login-form {
+font-family:verdana;
+color:blue;
+}

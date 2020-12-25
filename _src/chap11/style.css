@@ -1,0 +1,149 @@
+.body {
+width:900px;
+
+}
+
+.header-links a{
+font: 13px verdana;
+background-color:#AD360B;
+color:#FFFFFF;
+margin:3px;
+padding:5px;
+text-decoration:none;
+padding-left:5px;
+padding-right:5px;
+}
+.header-links a:hover{
+text-decoration:underline;
+}
+
+.header-links {
+font: 16px verdana;
+color:#AD360B;
+padding:7px;
+}
+
+.tutorial-url {
+width:500px;
+height:250px;
+background-color:#FFFFCC;
+margin:7px;
+
+}
+
+.tutorial-search {
+width:250px;
+height:60px;
+background-color:#FFFFCC;
+margin:7px;
+padding:6px;
+
+}
+
+.submit-button {
+border:1px #DDDDDD;
+background-color:#AD360B;
+color:#FFFFFF;
+width:100px;
+margin-right:10px;
+margin-top:10px;
+}
+
+.submit-text {
+color:#000000;
+margin-right:10px;
+margin-top:30px;
+margin-bottom:30px;
+font:14px verdana;
+}
+
+.submit-url {
+color:#000000;
+margin-right:10px;
+margin-top:20px;
+margin-bottom:20px;
+font:14px verdana;
+}
+
+.details-div {
+width:500px;
+height:150px;
+background-color:#FFFFCC;
+margin:7px;
+
+}
+
+.details-text {
+color:#000000;
+margin-right:10px;
+margin-top:10px;
+margin-bottom:10px;
+font:14px verdana;
+}
+
+.add-details-div {
+width:500px;
+height:300px;
+background-color:#FFFFDC;
+margin:7px;
+
+}
+
+.mytutorials table {
+
+padding:10px;
+
+}
+.mytutorials tr{
+border:1px solid #dddddd;
+background-color:#FFFFCC;
+padding:7px;
+}
+
+
+.mytutorials a {
+
+background-color:#FFFFCC;
+}
+
+.view-tutorial{
+
+background-color:#FFFFCC;
+border:1px solid #dddddd;
+padding:10px;
+margin:10px;
+}
+
+.view-tutorial td{
+
+border:1px solid #000000;
+padding:10px;
+
+}
+
+.tag_cloud {
+
+color:#AD360B;
+margin:5px;
+padding:5px;
+}
+
+.note {
+
+background-color:#FFFFCC;
+border:1px solid #dddddd;
+width:300px;
+margin:5px;
+padding:5px;
+}
+
+
+.options {
+padding:0px;
+
+}
+
+.options li{
+border:1px solid white;
+margin:10px;
+}

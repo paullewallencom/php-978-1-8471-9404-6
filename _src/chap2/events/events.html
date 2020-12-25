@@ -1,0 +1,22 @@
+<html>
+<head>
+   <title> determining which key was pressed</title>
+   <script type="text/JavaScript" src="prototype.js"></script>
+</head>
+<body>
+<div>
+   <input type="text" id="myelement" />
+</div>
+   <script type="text/javascript">
+   function onKeyup(e) {
+      var element = Event.element(e);
+      if(e.keycode == Event.ESC) {
+         alert("Clicked");
+      }
+    }
+   $('myelement').observe('keyup', onKeyup);
+   </script>
+
+
+</body>
+</html>

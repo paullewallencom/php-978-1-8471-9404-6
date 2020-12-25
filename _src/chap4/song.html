@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Let The Music PLay, baby!!!</title>
+<style type="text/css">
+.toolbar {
+background:#FFFFCC;
+}
+</style>
+ <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<script src="includes/scriptaculous/lib/prototype.js" type="text/javascript"></script>
+<script src="includes/scriptaculous/src/scriptaculous.js" type="text/javascript"></script>
+<script src="includes/scriptaculous/src/effects.js" type="text/javascript"></script>
+<script src="includes/scriptaculous/src/sound.js" type="text/javascript"></script>
+</head>
+<body>
+<h4>Let The Music Play, baby!!!</h4>
+<div class="toolbar">
+<a href="#" onclick="Sound.play('Track1.mp3'); return false">Play Song</a>&nbsp;&nbsp;
+<a href="#" onclick="Sound.play('Track2.mp3',{replace:true}); return false">Change The Next Song</a>&nbsp;&nbsp;
+<a href="#" onclick="Sound.disable(); return false">Mute</a>&nbsp;&nbsp;
+<a href="#" onclick="Sound.enable(); return false">Enable sounds</a>&nbsp;&nbsp;
+</div>
+</body>
+</html>

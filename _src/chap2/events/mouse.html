@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE> New Document </TITLE>
+<META NAME="Generator" CONTENT="EditPlus">
+<META NAME="Author" CONTENT="">
+<META NAME="Keywords" CONTENT="">
+<META NAME="Description" CONTENT="">
+ <title>X and Y coordinates of the mouse</title>
+        <script type="text/javascript" src="prototype.js"></script>
+</title>
+</HEAD>
+
+<BODY>
+  <div id="myMouse">
+            Dare You Drag The Mouse Here!!!!!
+        </div>
+
+        <script type="text/javascript">
+            function onMouseMove(e)
+            {
+                var element = Event.element(e);
+                element.update(Event.pointerX(e) + 'x' + Event.pointerY(e));
+            }
+
+            $('myMouse').observe('mousemove', onMouseMove);
+        </script>
+
+</BODY>
+</HTML>

@@ -1,0 +1,97 @@
+.mylists {
+
+font: 1em "MS Sans Serif";
+font-weight:bold;
+color:#E42343;
+
+}
+
+
+.mylists a{
+
+font: 1em "MS Sans Serif";
+font-weight:bold;
+color:#78868D;
+
+}
+
+
+.header-links {
+font: 1em "MS Sans Serif";
+font-weight:bold;
+color:#E42343;
+}
+
+
+.header-links a {
+font: 1em "MS Sans Serif";
+font-weight:bold;
+color:#78868D;
+}
+
+.ItemsInfo {
+font:11px verdana;
+color:grey;
+
+}
+
+.DateDetails {
+font:11px verdana;
+color:grey;
+}
+
+.header-text {
+font: 1em "MS Sans Serif";
+font-weight:bold;
+color:#71991A;
+
+}
+
+.showlists li a{
+font: 1em "MS Sans Serif";
+font-weight:bold;
+color:#9FC27B;
+
+}
+
+.list-title {
+font: 1.2em "MS Sans Serif";
+font-weight:bold;
+color:#9FC27B;
+
+}
+
+.AddItemLink {
+font: 14px "MS Sans Serif";
+color:#78868D;
+
+}
+
+.AddItemLink:hover {
+font: 14px "MS Sans Serif";
+background:#78868D;
+color:#FFFFFF;
+}
+
+#myform {
+
+background:#FFFFCC;
+width:300px;
+color:#E42343;
+font:14px "verdana";
+}
+
+.AddListForm {
+background:#FFFFCC;
+width:300px;
+color:#E42343;
+font:14px "verdana";
+
+}
+
+.MyNewList {
+background:#FFDDCC;
+width:300px;
+color:#E42343;
+
+}

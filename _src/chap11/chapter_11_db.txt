@@ -1,0 +1,69 @@
+-- phpMyAdmin SQL Dump
+-- version 2.8.2.4
+-- http://www.phpmyadmin.net
+-- 
+-- Host: localhost
+-- Generation Time: Mar 24, 2009 at 03:50 PM
+-- Server version: 5.0.24
+-- PHP Version: 5.1.6
+-- 
+-- Database: `bookmarker`
+-- 
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `comments`
+-- 
+
+CREATE TABLE `comments` (
+  `commentID` int(11) NOT NULL auto_increment,
+  `tutorialID` int(11) NOT NULL,
+  `ownerID` int(11) NOT NULL,
+  `comment_desc` varchar(500) NOT NULL,
+  `date` timestamp NOT NULL default CURRENT_TIMESTAMP,
+  PRIMARY KEY  (`commentID`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=102 ;
+
+-- --------------------------------------------------------
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `tutorial_tags`
+-- 
+
+CREATE TABLE `tutorial_tags` (
+  `tutorialID` bigint(20) unsigned NOT NULL,
+  `tag` varchar(255) NOT NULL,
+  PRIMARY KEY  (`tutorialID`,`tag`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `tutorials`
+-- 
+
+CREATE TABLE `tutorials` (
+  `tutorialID` int(11) NOT NULL auto_increment,
+  `tutorial_url` varchar(400) NOT NULL,
+  `tutorial_title` varchar(200) default NULL,
+  `tutorial_desc` varchar(400) default NULL,
+  `ownerID` int(11) NOT NULL,
+  `date` timestamp NOT NULL default CURRENT_TIMESTAMP,
+  PRIMARY KEY  (`tutorialID`),
+  UNIQUE KEY `tutorial_url` (`tutorial_url`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=9 ;
+
+-- --------------------------------------------------------
+
+-- 
+-- Table structure for table `users`
+-- 
+
+CREATE TABLE `users` (
+  `userID` int(11) NOT NULL auto_increment,
+  `Username` varchar(40) NOT NULL,
+  `Password` varchar(40) NOT NULL,
+  PRIMARY KEY  (`userID`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;

@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Combination of Various Effects</title>
+<style type="text/css">
+#mydiv {
+  border: 1px #green solid;
+
+}
+#mydiv1 {
+  border: 1px #green solid;
+    background:#DFEDFD;
+}
+.toolbar {
+background:#FFFFCC;
+}
+</style>
+<script src="includes/scriptaculous/lib/prototype.js" type="text/javascript"></script>
+<script src="includes/scriptaculous/src/scriptaculous.js" type="text/javascript"></script>
+<script src="includes/scriptaculous/src/effects.js" type="text/javascript"></script>
+<script src="includes/scriptaculous/src/unittest.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="toolbar">
+<a href="#" onClick="new Effect.Fade('mydiv'); return false;">Fade</a>&nbsp;&nbsp;
+<a href="#" onClick="new Effect.SlideUp('mydiv'); return false;">SlideUp</a>&nbsp;&nbsp;
+<a href="#" onClick="new Effect.SlideDown('mydiv'); return false;">SlideDown</a>&nbsp;&nbsp;
+<a href="#" onClick="new Effect.Puff('mydiv'); return false;">Puff</a>&nbsp;&nbsp;
+<a href="#" onClick="new Effect.DropOut('mydiv'); return false;">DropOut</a>&nbsp;&nbsp;
+<a href="#" onClick="new Effect.Shake('mydiv'); return false;">Shake</a>&nbsp;&nbsp;
+<a href="#" onClick="new Effect.Pulsate('mydiv'); return false;">Pulsate</a>&nbsp;&nbsp;
+<a href="#" onClick="new Effect.Squish('mydiv'); return false;">Squish</a>&nbsp;&nbsp;
+<a href="#" onClick="new Effect.Shrink('mydiv'); return false;">Shrink</a>&nbsp;&nbsp;
+<a href="#" onClick="new Effect.multiple(['mydiv','mydiv1'],Effect.Appear); return false; ">RESET</a>&nbsp;&nbsp;
+<a href="#" onClick="new Effect.BlindUp('mydiv'); return false;">BlindUp</a>&nbsp;&nbsp;
+<a href="#" onClick="new Effect.SwitchOff('mydiv'); return false;">SwitchOff</a>&nbsp;&nbsp;
+<a href="#" onClick="new Effect.Fold('mydiv'); return false;">Fold</a>&nbsp;&nbsp;
+<a href="#" onClick="new Effect.Grow('mydiv'); return false;">Grow</a>&nbsp;&nbsp;
+
+</div>
+<p>
+<div class="mydiv" id="mydiv" >
+<img src="wallpaper2.bmp" width="450">
+</div>
+
+<div class="mydiv1" id="mydiv1" style="background:#DFEDFD;">
+This is some random Text to make u smile. Please say Cheese :)
+</div>
+</body>
+</html>

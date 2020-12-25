@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Simple Ajax Auto-completer Example</title>
+<script type="text/javascript" src="src/lib/prototype.js"></script>
+<script type="text/javascript" src="src/src/scriptaculous.js"></script>
+   <script type="text/javascript" src="src/src/effects.js"></script>
+   <script type="text/javascript" src="src/src/controls.js"></script>
+
+
+<script type="text/javascript">
+window.onload = function() {
+   new Ajax.InPlaceEditor(
+      'theElement',
+      'try3.php',
+      {
+		formId:'whatever',
+         okText: 'Update me!',
+         cancelText: 'Never mind',
+		ajaxOptions: {method: 'post'}
+      }
+   );
+}
+</script>
+</head>
+<body>
+<p>Click over the "Click me!" text and then change text
+and click OK.</p>
+<p>Try this example with different options.</p>
+   <div id="theElement">
+      Click me!
+   </div>
+</body>
+</html>
